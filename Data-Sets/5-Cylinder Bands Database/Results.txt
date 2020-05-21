@@ -1,0 +1,3 @@
+trainTestMetrics: 0.666,0.666,0.666
+Fold3Metrics: 0.899,0.896,0.898
+Fold5Metrics: 0.941,0.941,0.941

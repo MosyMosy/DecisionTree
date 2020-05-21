@@ -1,0 +1,1 @@
+BeforPruneMetrics: 0.615,0.612,0.613, PruneValidationMetrics: 0.623,0.629,0.626, PruneTestMetrics: 0.73,0.727,0.729
