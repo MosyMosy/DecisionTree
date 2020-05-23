@@ -26,10 +26,10 @@ def RunPrunedTreeTest(data,attDict,validationFrac,testFrac):
     result = DTTest.RunTest(testData,tree)
     firstMetrics = DTTest.PercissionAndRecallAndFMeasure(result,attDict)
 
-    result = DTTest.RunTest(testData,prunedTree)
+    result = DTTest.RunTest(validationData,prunedTree)
     prundMetricsValidation = DTTest.PercissionAndRecallAndFMeasure(result,attDict)
 
-    result = DTTest.RunTest(validationData,prunedTree)
+    result = DTTest.RunTest(testData,prunedTree)
     prundMetricsTest = DTTest.PercissionAndRecallAndFMeasure(result,attDict)
 
     return [firstMetrics,prundMetricsValidation,prundMetricsTest]

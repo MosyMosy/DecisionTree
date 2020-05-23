@@ -29,7 +29,7 @@ def RunePruninig(tree:DTree.DTree, validationData:pd.DataFrame,attDict:dict):
 
             if prunedMetric[2] > bestMetric[2]:
                 bestMetric = prunedMetric
-                bestTree = PrunedTree
+                bestTree = copy.deepcopy(PrunedTree)
 
             chekedIdList.append(toPruneUid)
         else:
